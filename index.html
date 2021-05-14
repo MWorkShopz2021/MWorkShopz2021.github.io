@@ -1,19 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Le Wagon - Web Development Sprint</title>
-
-  <!-- Change these Google fonts with your own choice -->
-  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+<title>Avegat Home Fitness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
 </head>
+	
 <body>
-  <!-- Banner section -->
-<h1>hola</h1>
-  <!-- Cards section -->
 
-  <!-- Footer section -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Avegat Home Fitness</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Barra</a>
+      <a href="#menu" class="w3-bar-item w3-button">Fondos</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="LogoMarcaPanoramica.jpg" alt="Logo Marca" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large">
+    <h1 class="w3-xxlarge" style="text-shadow:1px 1px 0 #444">The Logo</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col l6 w3-padding-large">
+     <img src="image2.jpg" class="w3-round w3-image w3-opacity-off" alt="image2" style="width:100%">
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Equipo para barras</h1><br>
+      <h5 class="w3-center">Barra multifuncional</h5>
+      <p class="w3-large w3-text-grey">La <span class="w3-tag w3-light-grey">barra fija</span> es uno de los ejercicios más sencillos y antiguos del mundo, pero tiene grandes beneficios si somos constantes. La base de este ejercicio es levantar nuestro propio peso para desarrollar fuerza de la parte superior del cuerpo y tonificar los músculos.</p>
+      <p class="w3-large w3-text-grey">Al hacer barra se trabaja el dorsal ancho que es la espalda, el romboide que son los músculos centrales, la parte baja del trapecio, además de los bíceps, músculos del antebrazo, el pectoral mayor y el bíceps braquial. Te pones fuerte, mejora el balance de tu musculatura, tu figura, postura y reduce dolor de espalda.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Equipo para fondos</h1><br>
+      <h5 class="w3-center">Barra paralelas</h5>
+      <p class="w3-large w3-text-grey">Los <span class="w3-tag w3-light-grey">fondos </span> realizados con los brazos a la anchura de los hombros, cuando se habla de barras paralelas y los beneficios que esta trae, desarrollan principalmente los tríceps, junto con los músculos de los pectorales. Esta posición permite trabajar no sólo los músculos de los brazos, sino los hombros, la espalda y también los músculos estabilizadores del tronco, al igual que el abdomen y los músculos de la pierna.</p>
+	  <p class="w3-large w3-text-grey">Cuando realiza el movimiento al hacer un fondo, hay que descender hasta que su brazo cree un angulo de 90 grados, si pasas de este angulo, somete al deltoides y al pectoral a una gran tensión a nivel de tendones, lo cual provocaría graves lesiones, asegúrese de no descender más de lo indicado.</p><br>
+		
+	</div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="image3.jpg" class="w3-round w3-image w3-opacity-off" alt="image3" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contacto</h1><br>
+    <p>Ofertamos cualquier equipo para la casa con la mejor calidad. Entendemos su necesidad y estaremos satisfaciéndolo con productos duraderos y de revolucionario diseño, además cómodo y de fácil montaje. No dude en contactarnos.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Avegat Service, 42nd Living St, 43043 New York, NY</b></p>
+    <p>También puede contactarnos por teléfono +507 6911-5124 o correo electrónico avtm2020@gmail.com, o puede mandarnos un mensaje aquí:</p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Cuántas personas" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Hora y fechaDate and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensaje \ Requerimiento especial" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">ENVIAR MENSAJE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="defaul.html" title="W3.CSS" class="w3-hover-text-green">Avegat</a></p>
+</footer>
+
 </body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Jan 2019 20:52:15 GMT -->
 </html>
