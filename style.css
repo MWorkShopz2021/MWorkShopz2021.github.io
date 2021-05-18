@@ -67,7 +67,7 @@
     margin-top: 50px;
     color: gainsboro;
   }
-  @media only screen and (max-width: 675px) {
+  @media only screen and (max-width: 725px) {
     body {
       font-size: 12px;
     }
