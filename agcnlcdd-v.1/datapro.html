@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Calculador de Precios</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="jquery.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</head>
+<body>
+	
+<div class="container">
+  <h2>Bienvenido al calculador de iva</h2>
+    <div>
+	  <label for="sel1">¿Selecciona de que país sos?</label>
+      <select class="form-control" id="sel1" name="sellist1" onChange="putCountry()">
+		<option selected>Ingrese el país</option>
+        <option>Argentina</option>
+        <option>Canada</option>
+        <option>España</option>
+        <option>Uruguay</option>
+      </select>
+	  <p id="demo1" style="margin: 5px;"></p>
+    </div>
+	<br>
+    <div id="bloque1" class="form-group" style="display: none;">
+      <label id="etiqueta" for="text1">¡Agrega tu valor! then click outside the field</label>
+      <input type="text" class="form-control" id="text1" placeholder="Agrega tu valor" name="text1" onChange="putPrecio()">
+	  <p id="demo2" style="margin: 5px;"></p>
+    </div>
+    <div id="bloque2" class="form-group" style="display: none">
+      <label for="text2">¿Queres agregar otro valor para sumar? then click outside the field</label>
+      <input type="text" class="form-control" id="text2" placeholder="Agregar otro valor" name="text2" onChange="putOtroPrecio()">
+	  <p id="demo3" style="margin: 5px;"></p>
+    </div>
+	<div class="container">
+		<h4 id="demo4" style="margin: 15px -0.56em"></h4>
+		<h4 id="demo5" style="margin: 15px -0.56em"></h4>
+	</div>
+</div>
+<div class="container">
+  <p>Ingrese su edad y preciona el boton:</p>
+  <input type="text" class="form-control form-control-lg" id="age" value="18" />
+  <button type="button" class="btn btn-info btn-lg" onclick="getAge()" style="margin: 10px auto">¡Haz la prueba!</button>
+  <p id="demo"></p>
+</div>
+<div class="container">
+	<img id="image" src="1.jpg" width="160" height="120">
+</div>
+<script src="datapro.js"></script>
+</body>
+</html>
