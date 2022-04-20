@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.display-title {
+	font-size: 3rem;
+	font-weight: 300;
+	line-height: 1.2
+}
+.flex-container {
+	display: flex;
+	background-color: DodgerBlue;
+}
+.flex-container > div {
+	color: white;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+.inputabla, .w3-select{background-color: inherit}
+.oculto { display: none; }
+.visible { display: inline; }
+.fecha{text-align: center}
+#impexport, .flex-menu, .flecha{cursor: pointer}
+.divmenu {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.flex-menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ingresa y Consulta</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap.min.css">
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+	<style>h1{
+font-size: 20px;
+text-align: center;
+color: rgb(59, 68, 150);
+}
+form{
+  color:rgb(5, 14, 100);
+  font-size: 15px;
+}
+.sombra-2 {
+    position:relative;
+    margin:0;
+    height: 15px;
+    border:none;
+    display:inline-block;
+    background: #dde1e7;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(29, 45, 138);
+    padding: 15px 18px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #9b989d, 
+                -4px -4px 8px rgb(243,243,243);
+}
+.sombra-2:hover{
+    box-shadow: inset 4px 4px 8px rgb(175,175,175),
+                 inset -8px -8px 16px rgb(243,243,243);
+}
+.sombra-2:hover span{
+    display:inline-block;
+    transform:scale(0.98)
+}
+select{
+    border:1.9Px solid grey;
+    color:rgb(133, 127, 127);
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h3>
+    <center>Ingresa y Consulta</center>
+  </h3>
+  <form>
+    <div class="form-group">
+      <label for="Fecha">Fecha:</label>
+      <input type="date" class="form-control" id="fecha" name="fecha" value="2020-03-21" min="2019-01-01" max="2100-12-31">
+    </div>
+    <div class="form-group">
+      <label for="empresa">Empresa:</label>
+      <select class="form-control" id="empresa">
+        <option value="Seleccionar Empresa">Seleccionar Empresa</option>
+        <option value="Toluma">Toluma</option>
+        <option value="Meder">Meder</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="mesahorno">Mesa/Horno:</label>
+      <select class="form-control" id="mesahorno">
+        <option value="Seleccionar Mesa">Seleccionar Mesa/Horno</option>
+        <option value="H1">H1</option>
+        <option value="H2">H2</option>
+        <option value="H3">H3</option>
+        <option value="H4">H4</option>
+        <option value="H5">H5</option>
+        <option value="M1">M1</option>
+        <option value="M2">M2</option>
+        <option value="M3">M3</option>
+        <option value="M4">M4</option>
+        <option value="M5">M5</option>
+        <option value="M6">M6</option>
+        <option value="M7">M7</option>
+        <option value="M8">M8</option>
+        <option value="M9">M9</option>
+        <option value="M10">M10</option>
+        <option value="M11">M11</option>
+        <option value="M12">M12</option>
+        <option value="M13">M13</option>
+        <option value="M14">M14</option>
+        <option value="M15">M15</option>
+        <option value="M16">M16</option>
+        <option value="M17">M17</option>
+        <option value="M18">M18</option>
+        <option value="M19">M19</option>
+        <option value="M20">M20</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="pallet">N° de Cajas Muestreadas:</label>
+      <input type="text" class="form-control" id="pallet" value="" placeholder="N° de Cajas Muestreadas">
+    </div>
+    <div class="form-group">
+      <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+      <input type="date" class="form-control" id="fechaVencimiento" name="fechaVencimiento" value="2020-03-21" min="2019-01-01" max="2100-12-31">
+    </div>
+    <div class="form-group">
+      <label for="TipodeProceso">Tipo de Proceso:</label>
+      <select class="form-control" id="TipodeProceso">
+        <option value="Tipo de Proceso">Tipo de Proceso</option>
+        <option value="Promocion">Promocion</option>
+        <option value="Etiquetado">Etiquetado</option>
+        <option value="Remanejo">Remanejo</option>
+        <option value="Fraccionamiento">Fraccionamiento</option>
+      </select>
+    </div>
+    <div class="row form-group">
+      <div class="col">
+        <label for="sku">Sku:</label>
+        <input type="text" class="form-control" id="sku" value="" placeholder="Escribir Sku">
+      </div>
+      <div class="col">
+        <label for="cantidad">Pallets a Procesar:</label>
+        <input type="text" class="form-control" id="cantidad" value="" placeholder="N° de Pallets">
+      </div>
+    </div>
+    <a href="index.html" id="run1" class="btn btn-success"><span>Agregar</span></a><br>
+    <br>
+    <h4>Detalle</h4>
+    <p>
+    <h5 id="detalle">HELLMANNS MAY 12X500G PRM MAY 125G</h5>
+    </p>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th> <center>
+              Cajas por Pallet
+            </center>
+          </th>
+          <th> <center>
+              Unidades por Cajas
+            </center>
+          </th>
+          <th> <center>
+              Total de Unidades
+            </center>
+          </th>
+          <th> <center>
+              Tamaño de la Muestra en Cajas
+            </center>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="f12"><center>
+              123456
+            </center></td>
+          <td id="f13"><center>
+              123456
+            </center></td>
+          <td id="f15"><center>
+              123456
+            </center></td>
+          <td id="f16"><center>
+              123456
+            </center></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Errores en Pallets:</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <label>OK</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="ok">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Emb.Incorrecto (Film, Esq.)</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Pallet mal estado / Incorrecto</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Cajas Invertidas</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Et Faltante (Pallet/Vl./Mesa)</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Et.Incorrecta / Cod. Incorrecta</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Cajas Unitarias Sueltas</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Cajas Abiertas</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Error Cant. de Cajas por Pallet</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Cajas Fraccionadas</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Base armado pallet incorrecta</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Vencimiento Incorrecto</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Vencimiento Incorrecto</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Otros</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantpallet" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label for="totalerroresplt">Total de Errores</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="totalerroresplt" value="">
+        </div>
+      </div>
+    </div>
+    <br>
+    <p>Errores en Productos:</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <label>OK</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="ok">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Etiqueta Faltante Legal</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Etiqueta Faltante Octogeno</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Etiqueta Faltante FOP (T)</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Error Codigo (EAN/DUN/SAP)</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Error en el tipo de Cinta Utilizada</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Error Fajas/Sticker</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Bolsa/Caja Incorrecta</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Sell Term. Abierto o Arrugado</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Disp. Incorrecto en Pack o en la Caja</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Vencimiento Incorrecto</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Error Cant. de prod. por Caja</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label> Otros</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="cantproduct" value="">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <label for="totalerrorespdt"> Total de errores:</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="totalerrorespdt" name="unidad" value="">
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <a href="#" id="run" class="btn btn-primary"><span>Enviar</span></a>
+  </form>
+  <br>
+</div>
+<br>
+</body>
+</html>
