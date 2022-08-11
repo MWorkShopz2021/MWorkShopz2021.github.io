@@ -1,7 +1,7 @@
 {
-  "name": "TestAplication",
-  "short_name": "TestApp",
-  "description": "Haciendo pruebas a ver como va quedando la pwa :)",
+  "name": "RecordAplication",
+  "short_name": "Registro",
+  "description": "Registro del mantenimiento de camiones",
   "background_color": "#2B2B2B",
   "theme_color": "#F0DB4F",
   "orientation": "portrait",
